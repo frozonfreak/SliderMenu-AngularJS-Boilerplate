@@ -51,7 +51,7 @@
             
           </div><!-- /.navbar-collapse -->
         </nav>
-
+        <div ui-view ></div>
         </snap-content>
         <snap-drawer>
         <nav class="navbar navbar-inverse" role="navigation">
@@ -67,14 +67,14 @@
           </div>
         </nav>
           <ul>
-            <li ng-class="{ active: isActive('/')}"><a ui-sref="home">Link</a></li>
-            <li ng-class="{ active: isActive('/')}"><a ui-sref="home">Link</a></li>
+            <li ng-class="{ active: isActive('/')}"><a ui-sref="home">Home</a></li>
+            <li ng-class="{ active: isActive('/view')}"><a ui-sref="view">View</a></li>
         </snap-drawer>
 
        
 
           
-        <div ui-view ></div>
+        
     </body>
         <script src='//code.jquery.com/jquery-2.0.3.min.js'></script>
         <!-- attempt to load AngularJS from CDN -->   
